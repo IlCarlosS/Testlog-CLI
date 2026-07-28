@@ -1,0 +1,37 @@
+{
+  "name": "testlog",
+  "version": "1.0",
+  "description": "CLI ligero para llevar un log de pruebas y decisiones de desarrollo, sin la pesadez de Jira ni la fragilidad de un bloc de notas.",
+  "type": "commonjs",
+  "bin": {
+    "testlog": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "testing",
+    "devlog",
+    "documentation",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Carlos Solis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlCarlosS/Testlog-CLI.git"
+  },
+  "homepage": "https://github.com/IlCarlosS/Testlog-CLI#readme",
+  "bugs": {
+    "url": "https://github.com/IlCarlosS/Testlog-CLI/issues"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "js-yaml": "^5.2.1"
+  }
+}
