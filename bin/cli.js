@@ -4,6 +4,7 @@ const { Command } = require("commander");
 const { init } = require("../lib/init");
 const { newEntry } = require("../lib/new-entry");
 const { validate } = require("../lib/validate");
+const { serve } = require("../lib/serve");
 
 const program = new Command();
 
@@ -31,5 +32,11 @@ program
   .command("validate")
   .description("Revisa que todas las entradas tengan campos válidos (frontmatter)")
   .action(() => validate());
+
+program
+  .command("serve")
+  .description("Levanta un dashboard local en vivo para explorar las entradas")
+  .option("-p, --port <port>", "puerto", "3000")
+  .action((options) => serve(options));
 
 program.parse();
