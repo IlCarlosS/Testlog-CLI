@@ -13,13 +13,15 @@ program
   .description(
     "Log ligero de pruebas y decisiones de desarrollo para cualquier proyecto."
   )
-  .version("0.1.0");
+  .version("1.0.0");
 
 program
   .command("init")
   .description('Crea la carpeta "testlog/" en el proyecto actual')
-  .option("-l, --lang <idioma>", "idioma de las plantillas (es, en, pt)", "es")
-  .action((options) => init(options));
+  .option("-l, --lang <idioma>", "idioma de las plantillas (es, en) — si se omite, se pregunta interactivamente")
+  .action(async (options) => {
+    await init(options);
+  });
 
 program
   .command("new <tipo>")

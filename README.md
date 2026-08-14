@@ -11,7 +11,7 @@ La mayoría probamos rápido, arreglamos lo que falla, y seguimos. Cuando toca d
 
 ## Instalación
 
-Por ahora el proyecto no está publicado en npm — se instala clonando el repositorio. Preferimos esperar a tenerlo más probado antes de publicarlo, sobre todo con el panorama reciente de paquetes comprometidos en el registro.
+Por ahora el proyecto no está publicado en npm — se instala clonando el repositorio.
 
 ```bash
 git clone https://github.com/IlCarlosS/Testlog-CLI.git
@@ -59,9 +59,9 @@ testlog/
 ├── config.json
 ├── GUIA.md
 ├── tests/
-│   └── 2026-07-23_login-case-sensitive.md
+│   └── 2026-07-23_login-case-sensitive.md (ejemplo)
 └── devlog/
-    └── 2026-07-23_decision-email-case.md
+    └── 2026-07-23_decision-email-case.md (ejemplo)
 ```
 
 ## Idiomas
@@ -70,7 +70,7 @@ Las plantillas viven en `templates/<idioma>/`. Por ahora solo existe `es`. Añad
 
 ## Roadmap
 
-- Plantillas en inglés y portugués
+- Plantillas en portugués
 - Git hook opcional de `pre-commit` que corre `testlog validate`
 - Publicar en npm (pendiente — esperando estabilizar el proyecto con más uso local primero)
 

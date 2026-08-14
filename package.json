@@ -1,6 +1,7 @@
 {
   "name": "testlog",
-  "version": "1.0",
+  "version": "1.0.0",
+  "private": true,
   "description": "CLI ligero para llevar un log de pruebas y decisiones de desarrollo, sin la pesadez de Jira ni la fragilidad de un bloc de notas.",
   "type": "commonjs",
   "bin": {
@@ -18,6 +19,8 @@
     "testing",
     "devlog",
     "documentation",
+    "markdown",
+    "dashboard",
     "cli"
   ],
   "license": "MIT",
