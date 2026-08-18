@@ -66,7 +66,7 @@ testlog/
 
 ## Idiomas
 
-Las plantillas viven en `templates/<idioma>/`. Por ahora solo existe `es`. Añadir un nuevo idioma es crear `templates/en/test.md` y `templates/en/devlog.md` con la misma estructura de campos — no requiere tocar código.
+Las plantillas se generan en Español e Ingles, según la opción que elija el usuario.
 
 ## Roadmap
 
